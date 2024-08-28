@@ -127,6 +127,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      
 
       <section className="testimonials">
         <h2>Testimonials</h2>

@@ -78,3 +78,11 @@
     cursor: not-allowed;
   }
   
+  /* Code By Giriraj */
+  @media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%; 
+    }
+    
+  }
+  /* code ended */

@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import "./Profile.css";
 import axios from "axios";
 
+
 const Profile = () => {
+  
   const [user, setUser] = useState({
     firstName: "",
     middleName: "",
@@ -217,7 +219,7 @@ const Profile = () => {
                 ))}
               </ul>
               <div className="section-content">
-                {currentSection === "basic" && (
+                {currentSection === "basic"  && (
                   <fieldset>
                     <div className="form-card">
                       <h2 className="fs-title">Basic Information:</h2>
@@ -388,7 +390,7 @@ const Profile = () => {
                 {currentSection === "experience" && (
                   <fieldset>
                     <div className="form-card">
-                      <h2 className="fs-title">Experience:</h2>
+                      <h2 className="fs-title" data-initial='E'>Experience:</h2>
                       {experienceFields.map((field, index) => (
                         <div key={index} className="form-row">
                           <div className="form-group">

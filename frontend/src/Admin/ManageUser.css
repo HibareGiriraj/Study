@@ -110,4 +110,10 @@ h1 {
   background-color: #5a6268;
 }
 
-
+  /* Code By Giriraj */
+  @media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%; 
+    }
+  }
+  /* code ended */

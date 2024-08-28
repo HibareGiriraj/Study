@@ -268,3 +268,140 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+  /* Code By Giriraj */
+  @media only screen and (max-width:600px)
+  {
+    .mygigs-container {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    .mygigs-container h2 {
+      font-size: 2em;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .mygigs-active{
+    
+    
+    }
+    .mygigs-tabs button {
+      background-color: #f0f0f0;
+      border: none;
+      padding: 10px 20px;
+      margin: 0 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border-radius: 5px;
+      color: #333;
+    }
+    .mygigs-gigs-content {
+      display: flex;
+      width: 80vw;
+     flex-direction: column;
+     margin-left: 10%;
+      gap: 20px;
+    }
+    .mygigs-tabs {
+      display: flex;
+      justify-content: center;
+      margin-left: 30%;
+      margin-bottom: 20px;
+      flex-direction: column;
+    }
+    .mygigs-tabs button:hover,
+.mygigs-tabs .mygigs-active {
+  background-color: #333;
+  color: #fff;
+}
+    .completion-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .mygigs-gig-card {
+      background-color: #fff;
+      width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      margin-left: 20%;
+    }
+    
+    .mygigs-gig-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .mygigs-gig-title {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-size: 1.2em;
+      margin: 0;
+    }
+    
+    .mygigs-gig-description {
+      padding: 15px;
+      color: #555;
+    }
+    
+    .gig-details {
+      padding: 0 15px 15px;
+      color: #777;
+    }
+    
+    .gig-details span {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    .mygigs-complete-btn {
+      display: block;
+      width: calc(100% - 30px);
+      margin: 0 15px 15px;
+      padding: 10px 0;
+      text-align: center;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .mygigs-complete-btn:hover {
+      background-color: #555; /* Slightly lighter shade of black for hover effect */
+      
+    }
+    
+    .study-details{
+      display: flex;
+      flex-direction: column;
+     padding: 0px 15px;
+      font-size: 12px;
+      color: #999;
+      margin-bottom: 10px;
+    }
+    
+    .completion-modal {
+      position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+  }
+  /* code ended */

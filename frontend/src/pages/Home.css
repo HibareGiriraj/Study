@@ -274,7 +274,7 @@ body {
 }
 
 .step h3 {
-  font-size: 1.5em;
+  font-size: 100%;
   margin-top: 10px;
   color: #333;
 }
@@ -387,3 +387,370 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Code By Giriraj */
+@media only  screen and (max-width:600px)
+{
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .home {
+    text-align: center;
+  }
+  .hero {
+    position: relative;
+    height: 40vh;
+    width: 100vw;
+    overflow:hidden;
+  }
+  
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  .hero-content h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-left: 55px;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    margin-left: 80px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+  .hero-content button {
+    background-color: #333; /* Dark shade of black */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .hero-content button:hover {
+    background-color: #555; 
+    transform: scale(1.05);
+  }
+  
+  .hero-content button:active {
+    background-color: #111; 
+    transform: scale(0.95);
+  }
+  
+  .hero-content button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+  .popular-gigs {
+    padding: 0%;
+    background-color: rgb(255, 255, 255);
+  }
+  .popular-gigs h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .gig-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .available-studies h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: 15%;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  /* Card styling */
+  .study-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .homestudy-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 1.5rem;
+    align-items: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .homestudy-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .study-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .study-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .home-study-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .study-location {
+    
+    background: linear-gradient(45deg, #f9c74f, #f9844a, #f94144);
+    color: #fff;
+    padding: 0.2rem 1.2rem;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    cursor:default;
+  }
+  
+  /* Vibration effect on hover */
+  .study-location:hover {
+    animation: vibrate 0.3s linear infinite;
+  
+  }
+  
+  @keyframes vibrate {
+    0% { transform: translateX(0); }
+    25% { transform: translateY(-2px); }
+    50% { transform: translateY(2px); }
+    75% { transform: translateY(-2px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .study-date {
+    font-size: 0.9rem;
+    color: #888;
+    cursor:default;
+  }
+  
+  .calendar-icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 2px;
+  }
+  
+  
+  
+  /* How It Works Section */
+  .how-it-works {
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .how-it-works h2 {
+    font-size: 2rem;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+  
+    color: #333;
+  }
+  
+  .steps {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .step {
+    width: 200px;
+    text-align: center;
+    margin-left: 50px;
+    
+  }
+  .step-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+  }
+  
+  .step h3 {
+    font-size: 90%;
+    
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .step p {
+    font-size:13px;
+    color: #666;
+    margin-left: 10px;
+    margin-left: 20px;
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    text-align: center;
+    margin-left: 30px;
+    padding: 4rem 2rem;
+    background-color: #fff; /* Changed background to white */
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+    margin-left: 20px;
+  }
+  
+  .testimonial-list {
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 40px;
+  }
+  
+  .testimonial-card {
+    width: 250px;
+    margin: 1rem;
+    padding: 1.5rem;
+    background: #f9f9f9; /* Slightly different shade for card background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .testimonial-text {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #555;
+    font-style: italic;
+  }
+  
+  .testimonial-author {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  
+  
+  /* Benefits Section */
+  .benefits {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .benefits h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+    margin-left: 30px;
+  }
+  
+  .benefits ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .benefits li {
+    margin: 1rem;
+    text-align: center;
+    width: 200px;
+    margin-left: 40px;
+  }
+  
+  .benefits img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+  }
+  
+  .benefits p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  
+  /* Recent Gigs Section */
+  .recent-gigs {
+    padding: 50px 20px;
+    background-color: white;
+  }
+  
+  .recent-gigs h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+    margin-left: 10px;
+  }
+}
+
+  /* code ended */

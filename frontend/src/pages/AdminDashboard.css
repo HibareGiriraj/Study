@@ -125,4 +125,10 @@ flex-direction: column;
     fill: #333;
     font-weight: bold;
   }
-  
+   /* Code By Giriraj */
+   @media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%; 
+    }
+  }
+  /* code ended */

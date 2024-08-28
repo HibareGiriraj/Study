@@ -157,3 +157,178 @@ width: 80vw;
     flex-grow: 1; /* This makes it take up remaining space */
     align-items: flex-end; /* Pushes it to the bottom */
   }
+
+
+
+
+
+
+
+
+   /* Code By Giriraj */
+   @media only screen and (max-width:600px) 
+   {
+    .available-gigs {
+      padding: 20px;
+      width: 80vw;
+      /* background-color: #f9f9f9; */
+    }
+    
+    .available-gigs h2 {
+      font-size: 1.5em;
+      text-align: center;
+      margin-bottom: 20px;
+      margin-left: 20%;
+      color: #333;
+    }
+    
+    .gig-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .gig-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      padding: 20px;
+      width: 300px;
+      text-align: left;
+      transition: transform 0.2s;
+    }
+    
+    .gig-card:hover {
+      transform: scale(1.05);
+    }
+    
+    .gig-title {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    
+    .gig-description {
+      font-size: 14px;
+      margin-bottom: 10px;
+      color: #666;
+    }
+    
+    .gig-details {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: #999;
+      margin-bottom: 10px;
+    }
+    
+    .gig-company {
+      font-weight: bold;
+      color: #333;
+    }
+    
+    .gig-skills {
+      margin-bottom: 10px;
+    }
+    
+    .gig-skill {
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 4px;
+      padding: 3px 8px;
+      margin-right: 5px;
+      font-size: 12px;
+    }
+    
+    .apply-button {
+      display: inline-block;
+      background-color: #333; /* Dark grey for the button background */
+      color: #fff; /* White text color */
+    margin-top: 12px;
+      border: none;
+      border-radius: 4px;
+      padding: 8px 10px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1rem;
+      width: 100%;
+    }
+    
+    .apply-button:hover {
+      background-color: #555; /* Slightly lighter shade of black for hover effect */
+      transform: scale(1.05);
+    }
+    
+    .apply-button:active {
+      background-color: #111; /* Darker shade of black for active effect */
+      transform: scale(0.95);
+    }
+    
+    .apply-button:focus {
+      outline: none;
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+  
+    .study-title{
+      text-align: center;
+    }
+    
+  
+    .study-description {
+      font-size: 14px;
+      line-height: 1.5;
+      max-height: 3em;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      transition: max-height 0.3s ease;
+    }
+  
+    .study-description.expanded {
+      max-height: none;
+      white-space: normal;
+      /* overflow-y: auto; */
+    }
+  
+    .read-more-button {
+      background: none;
+      border: none;
+      color: #007bff;
+      cursor: pointer;
+      padding: 0;
+      font-size: 14px;
+      text-align: left;
+      display: block;
+      margin: 10px 0;
+    }
+  
+  
+    .homestudy-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      width: 250px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  
+    .home-study-details {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2px;
+      font-size: 14px;
+      flex-grow: 1; /* This makes it take up remaining space */
+      align-items: flex-end; /* Pushes it to the bottom */
+    }
+    
+   }
+   
+  /* code ended */

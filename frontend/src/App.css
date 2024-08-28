@@ -19,7 +19,7 @@
   }
   
   .content {
-    margin-left: 78px;
+    margin-left: 0px;
     /* padding: 20px; */
     transition: all 0.5s ease;
   }
@@ -29,12 +29,17 @@
   }
   
   /* Additional styles */
-  .content h1 {
+  /*.content h1 {
     /* font-size: 24px; */
     /* font-weight: bold; */
-  }
+  /*}
   
   /* .content p {
     font-size: 18px;
   } */
   
+
+ /* Code By Giriraj */
+ 
+ 
+/* code ended */

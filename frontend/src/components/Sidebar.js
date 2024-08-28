@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Sidebar.css"; // Ensure you import the CSS
 import { useDispatch } from "react-redux";
 import { logout } from "../Services/Actions/userAction";
+import { useEffect } from "react";
 
 import {
   FaHome,
@@ -26,18 +27,39 @@ const Sidebar = () => {
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
+  
+  // code by Giriraj//
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 600) {
+        setIsOpen(false); // Close the sidebar
+      } else {
+        setIsOpen(true); // Keep the sidebar open on larger screens
+      }
+    };
+    window.addEventListener('resize', handleResize);
+
+
+    handleResize();
+
+   
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+
+  // code ended//
 
   const handleLogout = () => {
     dispatch(logout());
   };
-
+ 
   return (
-    <div className={`sidebar ${isOpen ? "open" : ""}`}>
+    <div className={`sidebar ${isOpen ? "open" : "close"}`}>
       <div className="logo-details">
         <i className="bx bxl-codepen"></i>
         <div className="logo_name">StudiesHQ</div>
         <i
-          className={`bx bx-menu ${isOpen ? "rotate" : ""}`}
+          className={`bx bx-menu ${isOpen ? "" : ""}`}
           id="btn"
           onClick={toggleSidebar}
         >
@@ -144,6 +166,8 @@ const Sidebar = () => {
       </ul>
     </div>
   );
+
+  
 };
 
 export default Sidebar;

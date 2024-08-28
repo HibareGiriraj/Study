@@ -1,4 +1,5 @@
 /* Sidebar.css */
+
 * {
     margin: 0;
     padding: 0;
@@ -28,9 +29,12 @@
   .sidebar .logo-details .icon {
     color: white;
     margin-right: 10px;
+}
     /* opacity: 0; */
     /* transition: all 0.5s ease; */
-  }
+  
+  
+  
   .sidebar .logo-details .logo_name {
     color: #fff;
     font-size: 20px;
@@ -275,4 +279,52 @@
   .sidebar .dropdown-menu a span {
     margin-left: 10px;
   }
+
+
+
+
+
   
+  /* Code By Giriraj */
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 250px;
+      height: 100%;
+      background-color: #333;
+      color: white;
+      position: fixed;
+      left: 0;
+      top: 0;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+    }
+    
+    .sidebar.open {
+      transform: translateX(0); 
+    }
+    
+    .toggle-btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .sidebar {
+      transform: translateX(0);
+      position: relative;
+      height: auto;
+      width: 250px;
+    }
+    .toggle-btn {
+      display: none;
+    }
+    .sidebar.close{
+      transform: translateX(0%);
+    }
+  }
+/* code ended */

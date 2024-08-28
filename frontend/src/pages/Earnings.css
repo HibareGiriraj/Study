@@ -89,3 +89,101 @@ h3 {
 .message.error {
   color: #dc3545;
 }
+ /* Code By Giriraj */
+ @media only screen and (max-width:600px){
+  .earnings-page {
+    font-family: 'Arial', sans-serif;
+    width: 84vw;
+    margin:20%;
+    padding: 20px;
+    
+    background-color: #f9f9f9;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  
+    font-weight: bold;
+  }
+  
+  .completed-gigs {
+    margin-top: 20px;
+  }
+  
+  h3 {
+    margin-bottom: 20px;
+    color: #444;
+    font-size: 20px;
+    margin-left: 0%;
+  }
+  
+  .request-giftcards {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  
+  .completedgiftcard {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .completedgiftcard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .completedgiftcard div {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .request-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .request-button:hover {
+    background-color: #222;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .request-button:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+  }
+  
+  .message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  
+  .message.success {
+    color: #28a745;
+  }
+  
+  .message.error {
+    color: #dc3545;
+  }
+
+ }
+/* code ended */
